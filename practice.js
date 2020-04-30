@@ -38,7 +38,7 @@ var devMountainGoal = null;
 
 //Code here
 function greeting(myName){
-  return "Hello," +myName;
+  return "Hello," + " " +myName;
 };
 
 //////////////////PROBLEM 7////////////////////
@@ -88,13 +88,13 @@ var devMountainClassPet = dog.name;
 // with NAMEPARAM being the name parameter being passed in (not literally NAMEPARAM)
 
 // Code here
-function nameChecker(parameter){{
-  if(name === 'Steven')
+function nameCheck(parameter){
+  if (parameter === 'Steven'){
     return 'What is up Steven?'
-  } if (name === 'Bryan') {
-    return 'Hey, Bryan!'
+  } else if (parameter === 'Bryan') {
+    return 'Hey Bryan!'
   } else {
-    return 'Cool name, NAMEPARAM'
+    return `Cool name, ${parameter}`
   }
 };
 
@@ -135,7 +135,7 @@ function faveColorFinder(color){{
     return "so trendy"
   } 
   if(color !== "red", "green", "black")
-      return "You need to evaluate your favorite color choice."
+      return "you need to evaluate your favorite color choice"
       };
 
 //////////////////PROBLEM 13////////////////////
@@ -163,7 +163,7 @@ function pond() {
 let globalScope = ["duck"];
 
 //This array should contain the variable names (as strings) accessible in the bathroom function.
-let bathroomScope = ["sailorDuck", "rubberDuck"];
+let bathroomScope = ["rubberDuck", "duck"];
 
 //This array should contain the variable names (as strings) accessible in the bathtub function.
 let bathtubScope = ["duck", "sailorDuck", "rubberDuck"];
