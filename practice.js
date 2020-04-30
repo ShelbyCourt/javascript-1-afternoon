@@ -21,13 +21,14 @@ var lovesCode = true;
 //Create a variable called greatestFear that is undefined because we fear nothing
 
 //Code here
-var greatestFear = undefined;
+var greatestFear;
 //////////////////PROBLEM 5////////////////////
 
 //Create a variable called devMountainGoal that is null because we are just starting out
 
 //Code here
-var devMountainGoal = 0;
+var devMountainGoal = null;
+
 //////////////////PROBLEM 6////////////////////
 
 //Create a function declaration called greeting that
@@ -36,9 +37,9 @@ var devMountainGoal = 0;
 //plus the value of the name parameter.
 
 //Code here
-function greeting(name){
-  return `Hello, ${name}!`
-}
+function greeting(myName){
+  return "Hello," +myName;
+};
 
 //////////////////PROBLEM 7////////////////////
 
@@ -46,7 +47,9 @@ function greeting(name){
 //Give it the same functionality as the function greeting in Problem 6.
 
 //Code Here
-var newGreeting = greeting
+var newGreeting = function(myName){
+  return "Hello, " + myName
+};
 
 //////////////////PROBLEM 8////////////////////
 
@@ -54,7 +57,7 @@ var newGreeting = greeting
 //"apples", "milk", "eggs", "bread"
 
 //Code Here
-let groceries = ["apples", "milk", "eggs", "bread"]
+var groceries = ["apples", "milk", "eggs", "bread"];
 
 //////////////////PROBLEM 9////////////////////
 
@@ -64,23 +67,17 @@ let groceries = ["apples", "milk", "eggs", "bread"]
 //and goodBoy (a boolean).
 
 //Code Here
-let name = "Jasper"
-let age = 4
-let goodBoy = true
-
 let dog = {
-name: name,
-color: 0,
-age: age,
-goodBoy,
+name: "Joe",
+color: "black",
+age: 5,
+goodBoy: true,
 }
-
 //...access the dog's name from the object and assign it to a
 //variable called devMountainClassPet.
 
 //Code Here
-const devMountainClassPet = (dog.name)
-
+var devMountainClassPet = dog.name;
 //////////////////PROBLEM 10////////////////////
 
 //Write a function called nameCheck that takes in a name parameter.
@@ -91,6 +88,15 @@ const devMountainClassPet = (dog.name)
 // with NAMEPARAM being the name parameter being passed in (not literally NAMEPARAM)
 
 // Code here
+function nameChecker(parameter){{
+  if(name === 'Steven')
+    return 'What is up Steven?'
+  } if (name === 'Bryan') {
+    return 'Hey, Bryan!'
+  } else {
+    return 'Cool name, NAMEPARAM'
+  }
+};
 
 //////////////////PROBLEM 11////////////////////
 
@@ -99,14 +105,14 @@ const devMountainClassPet = (dog.name)
 // The add function should return the two parameters added together
 
 //Code Here
-const add = function(num1, num2){
+function add(num1, num2){
   return num1 + num2
 }
 //Now invoke add, passing in the numbers 3 and 4
 //storing the result in the variable mathSum.
 
 //Code Here
-const mathSum = add(3, 4)
+var mathSum = (add(3, 4));
 
 //////////////////PROBLEM 12////////////////////
 
@@ -118,17 +124,19 @@ const mathSum = add(3, 4)
 // Otherwise, you should return the string 'you need to evaluate your favorite color choice'
 
 // Code here
-function faveColorFinder(color){
-  if (color === 'red'){
-    return 'red is a great color'
-  } else if (color === 'green') {
-    return 'green is a solid favorite color'
-  } else if (color === 'black') {
-    return 'so trendy'}
-  } else {
-      return 'You need to evaluate your favorite color choice.'
-    }
+function faveColorFinder(color){{
+  if (color === "red")
+    return "red is a great color"
   }
+  if (color === "green"') {
+    return "green is a solid favorite color"
+  } 
+  if (color === "black") {
+    return "so trendy"
+  } 
+  if(color !== "red", "green", "black")
+      return "You need to evaluate your favorite color choice."
+      };
 
 //////////////////PROBLEM 13////////////////////
 
@@ -152,10 +160,10 @@ function pond() {
 //as strings.
 
 //This array should contain the variable names (as strings) accessible in the global scope.
-let globalScope = ["duck", "rubberDuck"];
+let globalScope = ["duck"];
 
 //This array should contain the variable names (as strings) accessible in the bathroom function.
-let bathroomScope = ["duck", "sailorDuck", "rubberDuck", "realDuck"];
+let bathroomScope = ["sailorDuck", "rubberDuck"];
 
 //This array should contain the variable names (as strings) accessible in the bathtub function.
 let bathtubScope = ["duck", "sailorDuck", "rubberDuck"];
@@ -168,13 +176,13 @@ let pondScope = ["duck", "realDuck"];
 //Create a variable called age with your age assigned to you
 
 // Code Here
-var age = 33
+var age = 33;
 // FLASH FORWARD TO NEXT YEAR
 // reassign the value of age to be one greater than it was, because, we all get older
 
 // Code Here
-var age =34
+var age =34;
 // Good news! We can live forever. Set your age to 999
 
 // Code Here
-var age = 999
+var age = 999;
