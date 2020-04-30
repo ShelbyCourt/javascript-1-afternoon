@@ -128,7 +128,7 @@ function faveColorFinder(color){{
   if (color === "red")
     return "red is a great color"
   }
-  if (color === "green"') {
+  if (color === "green") {
     return "green is a solid favorite color"
   } 
   if (color === "black") {
